@@ -1,0 +1,455 @@
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px) {
+
+  .uploadBtn:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+  }
+
+  .uploadBtn:not(:hover) {
+    transition: 0.5s;
+  }
+
+  .uploadBtn {
+    margin: 15px auto;
+    padding: 8px;
+    font-size: 17px;
+    background: none;
+    border: none;
+    box-shadow: 1px 1px 4px #00000045;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .choosePic {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px #00000045;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .eventFlex { 
+    display: flex;
+    align-items: center;
+  }
+
+  .uploadDiv {
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #33e13a;
+    color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+
+  .numbPeople {
+    font-size: 25px;
+  }
+
+  .divPeople { 
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .display-Events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+  .eventsPeople p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .listHeader{ 
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .eventsPeople{
+    height: auto;
+    padding: 12px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.229);
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 15px;
+  }
+
+  .peopleContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    height: auto;
+  }
+
+  .create-Event {
+    text-align: center;
+  }
+
+  .eventForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .eventForm label {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .eventForm input {
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 4px #0000004a;
+    margin-top: 5px;
+  }
+
+  .createEventBTN {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 22px;
+    border: none;
+    background: #22ace3;
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 #000000a3;
+  }
+
+  #reportMessage {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .containerEvent {
+    font-size: 18px;
+    width: 30%;
+    margin: 15px auto;
+    text-align: center;
+    line-height: 1.8;
+    box-shadow: 1px 1px 4px #00000070;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .delBtn {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 6px;
+    border: none;
+    background: red;
+    color: white;
+    box-shadow: 2px 2px 0 black;
+    display: none;
+  }
+
+  .closeBtn {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 6px;
+    border: none;
+    background: blue;
+    color: white;
+    box-shadow: 2px 2px 0 black;
+  }
+
+  .removeBtn {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 8px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .inside-Background {
+    background: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+
+  .inside-Background p{
+    background: white;
+    padding: 5px;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .modal-Background { 
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: #00000040;
+    display: none;
+  }
+
+  .submitForm{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+@media (min-width: 1100px){ 
+
+  .display-Events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  
+  .uploadBtn {
+    margin: 15px auto;
+    padding: 8px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    box-shadow: 1px 1px 4px #00000045;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .choosePic {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px #00000045;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .uploadDiv{ 
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #33e13a;
+    color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+   .numbPeople {
+    font-size: 25px;
+    margin: 15px auto;
+    text-align: center;
+  } 
+
+  .eventsPeople p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .listHeader{ 
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .eventsPeople{
+    height: auto;
+    padding: 12px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.229);
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 15px auto;
+  }
+
+  .peopleContainer {
+    height: auto;
+  }
+
+  .create-Event {
+    text-align: center;
+  }
+
+  .eventForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .eventForm label {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .eventForm input {
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 4px #0000004a;
+    margin-top: 5px;
+  }
+
+  .createEventBTN {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 22px;
+    border: none;
+    background: #22ace3;
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 #000000a3;
+  }
+
+  #reportMessage {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .containerEvent {
+    font-size: 18px;
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+    line-height: 1.8;
+    box-shadow: 1px 1px 4px #00000070;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .delBtn {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 6px;
+    border: none;
+    background: red;
+    color: white;
+    box-shadow: 2px 2px 0 black;
+    display: none;
+  }
+
+  .closeBtn {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 6px;
+    border: none;
+    background: blue;
+    color: white;
+    box-shadow: 2px 2px 0 black;
+  }
+
+  .removeBtn {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 8px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .inside-Background {
+    background: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+
+  .inside-Background p{
+    background: white;
+    padding: 5px;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .modal-Background { 
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: #00000040;
+    display: none;
+  }
+
+  .submitForm{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+}

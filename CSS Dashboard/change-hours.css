@@ -1,0 +1,308 @@
+
+
+
+
+
+
+
+
+
+
+.workshopHeader{ 
+  margin-bottom: 20px;
+}
+
+
+
+
+@media (min-width: 480px) { 
+
+  .form-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75%, 1fr));
+  }
+
+  .form-changeHours { 
+    height: 300px;
+    box-shadow: 1px 1px 4px #0000004f;
+    border-radius: 8px;
+    margin: 10px;
+  }
+
+}
+
+
+
+
+@media (min-width: 600px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+}
+
+
+@media (min-width: 480px) {
+
+
+  .form-changeHours { 
+    height: auto;
+    box-shadow: 1px 1px 4px #0000004f;
+    border-radius: 25px;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+  }
+
+  .form-changeHours input {
+    width: 60%;
+    margin: 10px auto;
+    padding: 7px;
+    border: none;
+    box-shadow: 1px 1px 4px #00000045;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  .form-changeHours label {
+    
+    font-size: 20px;
+
+  }
+
+  .addRemoveHours button:first-child { 
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: #4070f4;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: none;
+    font-size: 18px;
+    width: auto;
+
+  }
+
+  .addRemoveHours button:last-child{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: red;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .modal-box { 
+    width: 20%;
+    text-align: center;
+    position: relative;
+    background: #46454a;
+    box-shadow: 1px 1px 4px black;
+    padding: 13px;
+    border-radius: 8px;
+    color: white;
+    display: none;
+  }
+  
+  .background-modal {
+    height: 100vh;
+    width: 100%;
+    background: #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+  }
+
+  .div-withBTNS {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .deleteInfo, .deleteEnglish, .deleteMusic, .deleteMomYoga, .deleteDanceYoga { 
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: red;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .closeModalBox {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: black;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .workP {
+    font-size: 16px;
+  }
+
+
+}
+
+
+@media (min-width: 992px) { 
+
+  
+
+  .addRemoveHours {
+    margin-top: 10px;
+  }
+
+  .form-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
+
+  .form-changeHours { 
+    height: auto;
+    box-shadow: 1px 1px 4px #0000004f;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+}
+
+
+@media  (max-width: 480px) {
+
+  .form-changeHours { 
+    height: auto;
+    box-shadow: 1px 1px 4px #0000004f;
+    border-radius: 25px;
+    margin: 15px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  .form-changeHours input {
+    width: 60%;
+    margin: 10px auto;
+    padding: 7px;
+    border: none;
+    box-shadow: 1px 1px 4px #00000045;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  .form-changeHours label {
+    
+    font-size: 20px;
+
+  }
+
+  .addRemoveHours button:first-child { 
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: #4070f4;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: none;
+    font-size: 18px;
+    width: 40%;
+
+  }
+
+  .addRemoveHours button:last-child{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: red;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .modal-box { 
+    width: 90%;
+    text-align: center;
+    position: relative;
+    background: #46454a;
+    box-shadow: 1px 1px 4px black;
+    padding: 13px;
+    border-radius: 8px;
+    color: white;
+    display: none;
+  }
+  
+  .background-modal {
+    height: 100vh;
+    width: 100%;
+    background: #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+  }
+
+  .div-withBTNS {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .deleteInfo, .deleteEnglish, .deleteMusic, .deleteMomYoga, .deleteDanceYoga { 
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: red;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .closeModalBox {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 11px;
+    border: none;
+    background: black;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .workP {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+}
