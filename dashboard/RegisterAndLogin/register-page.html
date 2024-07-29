@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/CSS Dashboard/login-page.css">
+
+
+  <title>Регистрация</title>
+
+</head>
+
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <form method="post">
+
+    <h1 class="register-h1">Регистрация</h1>
+
+    <div>
+      <img class="logo-login" src="../../images/приключенци-removebg-preview.png" alt="logo-image">
+    </div>
+
+    <label for="reg-username">Имейл: </label>
+    <input required type="text" placeholder="Изберете имейл" id="reg-username" name="reg-username">
+
+    <label for="password">Парола: </label>
+    <input required type="password" placeholder="Изберете парола" id="password" name="password">
+
+    <label for="reg-pass-repeat">Повторете паролата: </label>
+    <input required type="password" placeholder="Повторете избраната парола" id="reg-pass-repeat"
+      name="reg-pass-repeat">
+
+    <button class="show-modal" id="register-btn">Регистрация</button>
+
+  </form>
+
+  <img src="./login-page-logic.php" alt="">
+
+  <script >
+
+    $(document).ready(function () {
+      let btn = $('#register-btn');
+
+      btn.on('click', function (event) {
+
+        event.preventDefault()
+
+        let formData = {
+          email: $('#reg-username').val(),
+          password: $('#password').val(),
+          passRepeat: $('#reg-pass-repeat').val(),
+        }
+
+        $.ajax({
+          type: "POST",
+          url: "register-page-logic.php",
+          contentType: "application/json",
+          data: JSON.stringify(formData),
+          success: function (response, index, e) {
+
+            const errorResponse = JSON.parse(e.responseText);
+
+
+            if (errorResponse.error === 'Всички полета са задължителни!') {
+              
+              $('body').append(`
+              <section>
+                <span class="overlay"></span>
+                <div class="modal-box">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <h2>Всички полета са задължителни!</h2><br>
+                  <p>Моля опитай отново!</p>
+                  <div class="buttons">
+                    <button class="close-btn">Затвори</button>
+                  </div>
+                </div>
+              </section>
+            `);
+
+            effects();
+
+
+            } else if(errorResponse.error === 'Паролите не съвпадат!') { 
+
+              $('body').append(`
+            <section>
+              <span class="overlay"></span>
+              <div class="modal-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>Паролите не съвпадат!</h2><br>
+                <p>Моля опитайте отново!</p>
+                <div class="buttons">
+                  <button class="close-btn">Затвори</button>
+                </div>
+              </div>
+            </section>
+          `);
+
+          effects();
+          
+            } else { 
+              $('body').append(`
+            <section>
+              <span class="overlay"></span>
+              <div class="modal-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>Успешна регистрация</h2><br>
+                <p>Акаунтът ви беше създаден!</p>
+                <div class="buttons">
+                  <button class="close-btn">Затвори</button>
+                </div>
+              </div>
+            </section>
+          `);
+
+          effects();
+
+            }
+
+
+            function effects () {
+              const section = document.querySelector("section"),
+              overlay = document.querySelector(".overlay"),
+              closeBtn = document.querySelector(".close-btn");
+            overlay.addEventListener("click", () => section.classList.remove("active"));
+            closeBtn.addEventListener("click", () => section.classList.remove("active"));
+
+            section.classList.add("active");
+            }
+           
+
+          },
+          error: function (data) {
+
+
+            if (data.responseText === "Всички полета са задължителни!") {
+
+              $('body').append(`
+            <section>
+              <span class="overlay"></span>
+              <div class="modal-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>Неуспешна регистрация</h2><br>
+                <p>Всички полета са задължителни!</p>
+                <div class="buttons">
+                  <button class="close-btn">Затвори</button>
+                </div>
+              </div>
+            </section>
+          `);
+
+              return;
+
+            }
+
+          }
+        });
+      });
+    });
+
+  </script>
+
+
+
+
+</body>
+
+</html>
