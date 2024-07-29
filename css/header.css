@@ -1,0 +1,253 @@
+.header-background {
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-h1{ 
+  text-align: center;
+    padding: 91px 15px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+@media (min-width: 480px) {
+
+  .displayBRS { 
+    display: none;
+  }
+
+  .svgHead {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;  
+      
+  }
+   .main-page {
+     display: none;
+   }
+   
+
+  .weekend-imgDIV {
+    display: flex;
+
+  }
+
+  .header-background {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .sign-up {
+    background: url(../images/2.svg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .main-page {
+    background-image: url(/images/main-pag.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .subject-form {
+    /*background-image: url(/images/3.svg);*/
+    background-repeat: no-repeat;
+    background-size: contain;  
+  
+  }
+
+   /* .blog {
+    background: url(../images/5.svg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  } */
+
+  .head-for-kids {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 30px;
+    font-weight: 600;
+    
+  }
+
+.header-with-text {
+  display: none;
+}
+
+.header-with-text p:last-child {
+  padding: 0 24px;
+  line-height: 1.3;
+  font-size: 14px;
+  font-weight: 100;
+  width: 50%;
+}
+
+#sellTextSoon { 
+  font-size: 22px;
+}
+
+
+}
+
+@media (min-width: 992px) {
+  /* .blog {
+    background: url(../images/5.svg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  } */
+
+  .header-background {
+    width: 100%;
+    height: 50vh;
+}
+
+.svgHead {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: top;  
+    
+}
+
+
+}
+
+@media (min-width: 1550px) {
+  .svgHead {
+    width: 100%;
+    height: auto;
+      
+  }
+}
+
+@media (max-width: 520px) {
+
+  .svgHead {
+   display: none;
+  }
+  .main-page {
+    width: 100%; 
+      /* background-image: url(.././images/мобилна\ проба.png); */
+  }
+  
+
+  .header-with-text {
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .sign-up {
+    background: url(../images/sign-up-page-img.jpg);
+  }
+
+  /* .blog {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-image: url(../images/5.svg);
+    background-position: center;
+  } */
+
+
+  
+  .head-for-kids {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+
+  .header-with-text p:last-child { 
+    padding: 0 24px;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+
+  .main-page-body {
+    background-size: contain; /* Adjust as needed for smaller screens */
+  }
+
+  .header-background {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  .header-background {
+    width: 100%;
+    height: 210px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .head-for-kids {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+}
+
+
+@media (max-width: 410px) {
+  .header-background {
+    width: 100%;
+    height: 213px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  .head-for-kids {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .header-background {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  .header-with-text p:last-child { 
+    padding: 0 24px;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+
+  .head-for-kids {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-background {
+    width: 100%;
+    height: 210px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}

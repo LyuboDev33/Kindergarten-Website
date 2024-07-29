@@ -1,0 +1,513 @@
+@font-face {
+  font-family: "PlovdivType";
+  src: url(/PlovdivTypeface-Fonts/OTF/PlovdivDisplay-Regular.otf);
+}
+* {
+  font-family: "PlovdivType", "sans-serif";
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .row {
+  width: 100%;
+  /* margin:1% 0%; */
+  padding: 0.6% 0%;
+  color: black;
+  font-size: 0.8em;
+  color: black;
+}
+
+
+.footer .row a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+/* .footer .row a:hover{
+  color:#fff;
+  } */
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  /* margin: 0px 30px; */
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+.row-contacts ul li {
+  color: black;
+}
+
+.row-contacts ul li a {
+
+  color: white;
+}
+
+
+
+
+
+@media (min-width: 580px) {
+    
+    .divPics {
+     margin-top: 11px; 
+     text-align: left;   
+    }
+    
+    .created {
+        
+        font-size: 14px;
+    }
+
+  .styleDiv {
+    display: flex;
+  }
+  
+  .displayLogoTags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .displayMode {
+    display: flex;
+  }
+
+  .row-contacts ul {
+    width: 100%;
+    display: flex;
+  }
+
+  .row-contacts ul li a {
+    font-size: 16px;
+    color: black;
+  }
+
+
+  .footer {
+    margin-top: 30px;
+    /* padding: 30px 0px; */
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #e8e8e8;
+    /* background: linear-gradient(0deg, rgb(0 9 36 / 90%) -16%, rgb(31 101 227) 100%); */
+  }
+
+
+  .contacts-display {
+    display: flex;
+  }
+
+  .footer-logo {
+    width: 15%;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .row-tags {
+    width: 100%;
+    /* margin:1% 0%; */
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+
+  .row-contacts {
+    width: 100%;
+    /* margin: 1% 0%; */
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 0.8em;
+  }
+
+  .row-contacts ul {
+    width: 100%;
+    display: flex;
+  }
+
+  .row-contacts ul li {
+     width: 100%;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px auto;
+    /* text-align: center; */
+    /* width: 99%; */
+  }
+
+  .footer .row a i,
+  .footer .row-tags a i {
+    margin: 0% 4%;
+  }
+
+  .footer .row ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*#facebook,*/
+  /*#tiktok,*/
+  /*#instagram {*/
+  /*  font-size: 45px;*/
+  /*}*/
+
+  #instagram {
+      margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #facebook:hover,
+  #tiktok:hover,
+  #instagram:hover {
+    cursor: pointer;
+  }
+
+
+  .row-contacts {
+   width: 100%;
+    display: flex;
+    color: black;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  .row-contacts ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .displayMode {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .findUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .row-tags {
+    display: flex;
+
+    padding: 0.6% 0%;
+
+    align-items: baseline;
+  }
+
+  #facebook,
+  #tiktok,
+  #instagram {
+    height: 40px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+  }
+
+  .footer .row {
+    width: 90%;
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+    
+    .backgroundGreenSEO { 
+            margin-top: 50px;
+    }
+    
+    .kindergartenBlock {
+        margin-top: 65px;
+    }
+
+  .displayLogoTags {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+
+  .row-contacts {
+    width: 100%;
+    display: flex;
+    color: black;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  .row-contacts ul li {
+    /* margin: 10px auto; */
+    width: 100%;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .row-contacts ul li a {
+    font-size: 16px;
+    color: black;
+  }
+
+
+  .displayMode {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: -25px auto;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .findUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 50px;
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .row-tags {
+    display: flex;
+    padding: 0.6% 0%;
+    justify-content: center;
+  }
+
+  #facebook,
+  #tiktok,
+  #instagram {
+    font-size: 50px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+  }
+
+  .footer .row {
+    width: 90%;
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  .first-ul {
+    width: 100%;
+    flex-direction: row;
+    /* margin: 10px auto; */
+    font-size: 17px;
+    line-height: 1.8;
+    text-decoration-color: white;
+  }
+
+}
+
+@media (min-width: 1250px) {
+  
+
+  /*#facebook,*/
+  /*#tiktok,*/
+  /*#instagram {*/
+  /* font-size: 30px;*/
+  /*  margin-left: 20px;*/
+  /*  margin-right: 20px;*/
+  /*}*/
+
+  .find-us {
+    font-size: 18px;
+    margin-bottom: -18px;
+  }
+
+}
+
+
+@media (max-width: 580px) {
+
+  .spaceSpan { 
+    display: none;
+  }
+    
+    .styleDiv { 
+        margin-top: 4px;
+    }
+
+  .line {
+    display: none;
+  }
+
+  .find-us {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+        margin-top: 4px;
+  }
+  
+  .created {
+   margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .row-contacts ul li a {
+    font-size: 16px;
+    color: black;
+  }
+
+
+  .footer {
+    /*padding: 30px 0px;*/
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #e8e8e8;
+    /* background: linear-gradient(0deg, rgb(0 9 36 / 90%) -16%, rgb(31 101 227) 100%); */
+  }
+
+  .footer-logo {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .row-tags {
+    width: 100%;
+    /* margin: 1% 0%; */
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 0.8em;
+    margin-top: -10px;
+    margin-bottom: 0px;
+  }
+
+  .row-contacts {
+    display: flex;
+    width: 100%;
+    /* margin: 1% 0%; */
+    padding: 0.6% 0%;
+    color: black;
+    font-size: 0.8em;
+    flex-direction: column-reverse;
+  }
+
+  .first-ul {
+    width: 68%;
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 17px;
+    padding: 6px;
+    text-decoration-color: white;
+    border-radius: 75px;
+  }
+
+  .second-ul {
+    font-size: 16px;
+    display: flex;
+    margin: 10px auto;
+    width: 80%;
+    flex-direction: column;
+  }
+
+
+  .row-contacts ul li {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    color: black;
+  }
+
+
+  .footer .row ul li {
+        display: block;
+        margin: 5px auto;    
+        text-align: center;
+        width: 100%;
+  }
+
+  .footer .row a i,
+  .footer .row-tags a i {
+    margin: 0% 4%;
+  }
+
+  .footer .row ul {
+    width: 100%;
+    display: flex;
+  }
+
+  #facebook,
+  #tiktok,
+  #instagram {
+    height: 35px;
+    color: black;
+  }
+
+  #instagram {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 35px;
+
+  }
+
+  #facebook:hover,
+  #tiktok:hover,
+  #instagram:hover {
+    cursor: pointer;
+  }
+
+
+}

@@ -1,0 +1,1110 @@
+@font-face {
+  font-family: "PlovdivType";
+  src: url(/PlovdivTypeface-Fonts/OTF/PlovdivDisplay-Regular.otf);
+}
+
+* {
+  font-family: "PlovdivType", "sans-serif";
+  text-decoration: none;
+    /*font-size: 22px;*/
+
+}
+
+.blog-cart {
+
+  width: 90%;
+  margin: 25px auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-cart .first {
+  width: 100%;
+
+}
+
+
+
+
+
+@media (min-width: 550px) {
+
+  .terms-and-conditions { 
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    text-align: justify;
+  }
+    
+    .indexPage {
+        
+        position: static;    
+        
+    }
+
+
+  .actuals {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  .modalMain {
+       height: auto;
+    background: white;
+    width: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* padding: 20px; */
+    transition: opacity 0.5s ease;
+    animation: fadeIn 1s ease;
+    opacity: 0;
+  }
+
+
+
+  .modalMain h1 {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .modalMain p {
+    font-size: 24px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .modalMain button {
+     padding-bottom: 10px;
+    padding-top: 6px;
+    font-size: 24px;
+    border: none;
+    background: #6db5db;
+    color: white;
+    border-radius: 8px;
+    /* box-shadow: 3px 3px 0px black; */
+    cursor: pointer;
+    width: 55%;
+    margin: 15px auto;
+
+
+
+  }
+
+  .modalMain button:hover {
+    transition: 0.5s;
+    padding: 10px;
+
+  }
+
+  .modalMain button:not(:hover) {
+    transition: 0.5s;
+  }
+
+  .modalMain button:active {
+    margin-top: 3px;
+  }
+
+  .containerMain {
+    height: 100vh;
+    width: 100%;
+    background: #00000059;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .kids-menus-forest-div,
+  .purpleDiv,
+  .kids-menus-paintingDiv,
+  .kids-menus-textbook {
+    border-radius: 24px;
+    box-shadow: 1px 1px 4px #00000061;
+  }
+
+
+  .display-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 99%;
+  }
+
+
+
+  .read-more-div a {
+    padding: 3px;
+    border-radius: 8px;
+    color: #6db5db;
+  }
+
+  .read-more-div a:hover {
+    transition: 0.4s;
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+
+  .read-more-div a:not(:hover) {
+    transition: 0.6s;
+
+  }
+
+
+  .firstBlog-h1 {
+       text-align: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .blog-cart.first:hover {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.347);
+    transition: 0.5s;
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+ 
+  .blog-cart.first p {
+    text-align: left;    
+    padding-bottom: 15px;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .readMore { 
+    text-align: right;    
+    padding-bottom: 15px;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 18px;
+    flex: 1;
+  }
+
+  .read-more-div {
+     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-right: 10px; */
+    /* margin-top: 20px; */
+    /* padding-bottom: 13px; */
+    font-size: 13px;
+        width: 85%;
+    margin: 0 auto;
+  }
+
+  .blog-main-images {
+    width: 40%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+  }
+
+  .blog-cart {
+    opacity: 0;
+    transition: 0.5s;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+    height: auto;
+    border-radius: 8px;
+    display: flex;
+  }
+
+
+
+  .kids-menus-forest-div:hover,
+  .purpleDiv:hover,
+  .kids-menus-paintingDiv:hover,
+  .kids-menus-textbook:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 4px #0000006e;
+  }
+
+  .kids-menus-forest-div:not(:hover),
+  .purpleDiv:not(:hover),
+  .kids-menus-paintingDiv:not(:hover),
+  .kids-menus-textbook:not(:hover) {
+    transition: 0.5s;
+  }
+
+  .call-us {
+    font-size: 22px;
+    color: #0a1e29;
+    border: none;
+    margin-top: 15px;
+       padding: 5px 20px 8px 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 3px 3px 0 #0000001a;
+    opacity: 0;
+  }
+
+  .call-usSubject { 
+    background: #f6985e;
+    font-size: 22px;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    padding: 5px 20px 8px 20px;
+    border-radius: 8px;
+    /* background: white; */
+    box-shadow: 3px 3px 0 #0000001a;
+  }
+
+  .call-us:hover, .call-usSubject:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+
+  .call-us:not(:hover), .call-usSubject:not(:hover) {
+    transition: 0.5s;
+  }
+
+
+  .br-contact {
+    color: white;
+    font-size: 24px;
+    line-height: 1.6;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .contact-us {
+    color: white;
+    font-size: 32px;
+    line-height: 1.6;
+    width: 95%;
+    margin: 15px auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: -74px;
+    opacity: 0;
+  }
+
+
+
+  .need-info {
+    width: 100%;
+    background-color: #3da6df;
+    text-align: center;
+    height: auto;
+    padding-bottom: 32px;
+    margin-top: 71px;
+  }
+
+  .divs-p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .divs {
+    height: auto;
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 6px auto;
+  }
+
+  .container-divs {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0;
+  }
+
+  .our-values {
+    font-size: 30px;
+  }
+
+  .mountains {
+    height: 100px;
+  }
+
+  .header-values, .header-valuesActuals {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 29px;
+    padding-top: 24px;
+    margin-bottom: -40px;
+    opacity: 0;
+  }
+
+
+  .values-background {
+    height: auto;
+    background-color: rgb(0 168 255 / 18%);
+    padding-bottom: 30px;
+  }
+
+  .all-imgs {
+    height: 150px;
+    margin-top: 10px;
+  }
+
+  .greenForest,
+  .purple-book,
+  .painting {
+        height: 100%;
+     /*margin-top: 35px; */
+  }
+
+  .kidos-div {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+
+
+  .kids-menus-forest-div {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #0080004d;
+    border: none;
+  }
+
+  .purpleDiv {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #4000804d;
+    margin-left: 10px;
+    border: none;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .kids-menus-paintingDiv {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #f6ea9dba;
+    border: none;
+    /* margin-right: 10px; */
+  }
+
+  .kids-menus-textbook {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    /*background: #efec3678;*/
+    background: #e96b1d63;
+    border: none;
+  }
+
+
+  .div-One {
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: center;
+
+
+  }
+
+  .div-Two {
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .round-div {
+    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.296); */
+    border-radius: 100%;
+    padding: 10px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .text-subtitle {
+ text-align: center;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: black;
+  }
+
+  .container-blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75%, 1fr));
+  }
+
+}
+
+
+@media (min-width: 750px) {
+
+  .greenForest,
+  .purple-book,
+  .painting {
+    height: 100%;    
+    /*margin-top: 106px;*/
+  }
+
+  .kidos-div {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+}
+
+
+
+@media (min-width: 992px) {
+
+
+ 
+  .all-imgs {
+  height: 111px;
+    margin-top: 10px;
+  }
+
+  .divs-p {
+    font-size: 18px;
+  }
+
+
+  .container-divs {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .kids-menus-paintingDiv {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .kids-menus-textbook {
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+  .kids-menus-forest-div {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+   .purpleDiv {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  /* .container-blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    width: 95%;
+    margin: 15px auto;
+  } */
+
+  /* .kids-menus-paintingDiv {
+    margin-right: 20px;
+    margin-left: 20px;
+  } */
+
+ 
+
+  .greenForest,
+  .purple-book,
+  .painting {
+       height: 120%;
+     /*margin-top: 40px;*/
+  }
+
+  .blog-cart.first p {
+    text-align: left;
+    padding-bottom: 15px;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 18px;
+
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .text-subtitle {
+        
+        font-size: 22px;
+    }
+
+  .blog-main-images {
+    width: 45%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .firstBlog-h1 {
+  text-align: left;
+    margin-top: 8px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 85%;
+    margin: 5px auto;
+    font-size: 23px;
+  }
+
+  .blog-cart.first p {
+    text-align: left;
+    padding-bottom: 15px;
+    width: 85%;
+    margin: 10px auto;
+
+  }
+
+
+}
+
+
+@media (min-width: 1450px) {
+
+  .container-blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(79%, 1fr));
+    width: 77%;
+    margin: 15px auto;
+        padding-bottom: 40px;
+  }
+
+
+  .kidos-div {
+    width: 80%;
+  }
+  
+    .kids-menus-paintingDiv {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
+  .kids-menus-textbook {
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+
+  .kids-menus-forest-div {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+   .purpleDiv {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+}
+
+@media (min-width: 1650px) {
+
+  .container-blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(79%, 1fr));
+    width: 70%;
+    margin: 15px auto;
+  }
+
+
+  .kidos-div {
+    width: 70%;
+  }
+  
+   .blog-main-images {
+    width: 38%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+
+}
+
+
+/* START COOKIE MODAL */
+
+.modal {
+ box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+  height: auto;
+  width: 33%;
+  padding: 10px;
+  border-radius: 8px;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(250px);
+  background: #ffffff;
+  justify-content: space-around;
+  color: white;
+  padding: 18px;
+}
+
+.cookie-img {
+  height: 55px;
+}
+
+.format-modal {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000070;
+  display: flex;
+  justify-content: center;
+}
+
+.modal p {
+  text-align: center;
+  padding: 10px;
+      color: black;
+}
+
+.btn {
+ padding: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    font-size: 15px;
+    /* box-shadow: 2px 2px 0 black; */
+    color: white;
+    background: #6db5db;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    /* text-align: center; */
+    align-items: stretch;
+}
+
+.btn:active {
+  margin-top: 2px;
+}
+
+
+/* END COOKIE MODAL */
+
+
+
+
+@media (max-width: 550px) {
+    
+     .indexPage {
+        
+        position: static;    
+        
+    }
+
+  .read-more-div a {
+    padding: 3px;
+    border-radius: 8px;
+    color: #6db5db;
+  }
+
+  .modalMain {
+    display: none;
+  }
+
+  .kids-menus-forest-div,
+  .purpleDiv,
+  .kids-menus-paintingDiv,
+  .kids-menus-textbook {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 8px;
+  }
+
+
+  .all-imgs {
+    height: 100px;
+    margin-top: 10px;
+  }
+
+
+  .modal {
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+    height: auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(250px);
+    background: #ffffff;
+    justify-content: space-around;
+    color: white;
+    padding: 18px;
+  }
+
+
+  .blog-main-images {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+  }
+
+  .terms-and-conditions {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .call-us {
+    font-size: 16px;
+    color: #0a1e29;
+    border: none;
+    margin-top: 15px;
+    padding: 5px 10px 8px 10px;
+    border-radius: 8px;
+    background: white;
+    opacity: 0;
+  }
+
+  .call-usSubject { 
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    padding: 5px 10px 8px 10px;
+    border-radius: 8px;
+    background: #f6985e;
+  }
+
+
+
+  .our-values {
+    font-size: 22px;
+  }
+
+
+  .container-divs {
+    width: 99%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0;
+  }
+
+  .divs {
+    height: auto;
+    width: 90%;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 6px auto;
+  }
+
+  .divs-p {
+    /*margin-top: -20px;*/
+    font-size: 0.9em;
+
+  }
+
+  .greenForest,
+  .purple-book,
+  .painting {
+    height: 100%;
+  }
+
+  .kidos-div {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .kids-menus-forest-div {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #0080004d;
+    border: none;
+  }
+
+  .purpleDiv {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #40008054;
+    ;
+    border: none;
+  }
+
+  .kids-menus-paintingDiv {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #f6ea9dba;
+    border: none;
+  }
+
+  .kids-menus-textbook {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background: #e96b1d63;
+    border: none;
+  }
+
+
+  .div-One {
+    display: flex;
+    margin: 0px auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+  }
+
+  .div-Two {
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .round-div {
+    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.296); */
+    border-radius: 100%;
+    padding: 10px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .text-subtitle {
+    text-align: center;
+    margin: 8px auto;    
+    font-size: 16px;
+    color: black;
+  }
+
+
+  .firstBlog-h1 {
+    text-align: center;
+    margin-top: 8px;
+    padding-bottom: 12px;
+    text-decoration: underline;
+  }
+
+  .blog-cart { 
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .blog-cart.first {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .blog-cart.first p, .read-more-div div {
+    text-align: center;
+    padding-bottom: 22px;
+    width: 85%;
+    margin: 0 auto;
+
+  }
+
+  .read-more-div {
+   display: flex;
+    justify-content: flex-end;
+    /* margin-right: 10px; */
+    /* margin-top: 20px; */
+    /* padding-bottom: 13px; */
+    font-size: 13px;
+
+  }
+
+  .values-background {
+    height: auto;
+    background-color: rgb(0 168 255 / 18%);
+    padding-bottom: 25px;
+    padding: 5px 10px;
+  }
+
+  .header-values, .header-valuesActuals {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 29px;
+    padding-top: 8px;
+    margin-bottom: -30px;
+    opacity: 0;
+  }
+
+  .mountains {
+    height: 65px;
+  }
+
+  .mountain-centered {
+    height: 110px;
+    width: 100%;
+    display: block;
+  }
+
+  .need-info {
+    width: 100%;
+    background-color: #3da6df;
+    text-align: center;
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 15px;
+  }
+
+  .contact-us {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .br-contact {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+
+}
+
+@media (max-width: 380px) {
+
+  .values-background {
+    height: auto;
+    background-color: rgb(0 168 255 / 18%);
+    padding-bottom: 25px;
+    padding: 5px 10px;
+  }
+
+  .divs-p {
+    /*margin-top: -20px;*/
+       font-size: small;
+  }
+
+  .our-values {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 345px) {
+  .divs-p {
+    /*margin-top: -20px;*/
+    font-size: small;
+  }
+
+   .all-imgs {
+    height: 60px;
+    margin-top: 10px;
+  } 
+}

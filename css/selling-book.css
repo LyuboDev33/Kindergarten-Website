@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+@media (min-width: 480px) { 
+  .anniDannyImg {  
+    width: 35%;
+  }
+
+  .kidsWithText p { 
+    width: 80%;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.kidsBR { 
+  display: none;
+}
+
+#sellTextSoon { 
+  width: 80%;
+}
+
+}
+
+@media (min-width: 992px) { 
+  .kidsWithText { 
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) {  
+  .anniDannyImg {  
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  #sellTextSoon { 
+    width: 90%;
+    padding: 0;
+  }
+
+  .kidsWithText p { 
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .header-with-text { 
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  
+
+
+}
